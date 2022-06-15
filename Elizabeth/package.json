@@ -4,7 +4,8 @@
   "description": "[![Generic badge](https://img.shields.io/badge/course%20available%3F-yes-green.svg)](https://shields.io/)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "shopify theme serve && npx tailwindcss -i ./src/tailwind.css -o ./assets/application.css --watch"
   },
   "keywords": [],
   "author": "",
