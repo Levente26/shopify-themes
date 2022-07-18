@@ -20,7 +20,7 @@
         <div class="flex items-center justify-center">
             <div class="max-w-7xl text-center">
             {% if section.settings.enable_published_date %}
-                <time itemprop="datePublished dateCreated" datetime="{{ article.published_at | date: '%Y-%m-%d'}}">{{ article.published_at | date: format: 'on_date'}}</time>
+                <time itemprop="datePublished dateCreated" datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'on_date' }}</time>
             {% endif %}
             </div>
         </div>
@@ -145,7 +145,7 @@
         "@context": "http://schema.org", 
         "@type": "BlogPosting",
         "headline": {{ article.title | json }},
-        "articleBody": {{ article.content | strip_html | json}},
+        "articleBody": {{ article.content | strip_html | json }},
 
         {% if article.excerpt != blank %}
             "description": {{ article.excerpt | strip_html | json }}
